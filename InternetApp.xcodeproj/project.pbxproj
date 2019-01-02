@@ -12,6 +12,8 @@
 		993737EB21C16F6200ED8C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993737E921C16F6200ED8C91 /* Main.storyboard */; };
 		993737ED21C16F6B00ED8C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993737EC21C16F6B00ED8C91 /* Assets.xcassets */; };
 		993737F021C16F6B00ED8C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993737EE21C16F6B00ED8C91 /* LaunchScreen.storyboard */; };
+		993737FB21C1714F00ED8C91 /* Definitions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 993737FA21C1714E00ED8C91 /* Definitions.pdf */; };
+		999D390021DD1438006E4619 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 999D38FF21DD1437006E4619 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		993737EC21C16F6B00ED8C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		993737EF21C16F6B00ED8C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		993737F121C16F6C00ED8C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		993737FA21C1714E00ED8C91 /* Definitions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Definitions.pdf; path = ../../../../Documents/Definitions.pdf; sourceTree = "<group>"; };
+		999D38FF21DD1437006E4619 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,8 +42,8 @@
 		993737D921C16F6100ED8C91 = {
 			isa = PBXGroup;
 			children = (
+				999D38FF21DD1437006E4619 /* Default-568h@2x.png */,
 				993737E421C16F6200ED8C91 /* InternetApp */,
-				993737E321C16F6200ED8C91 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,19 +53,46 @@
 				993737E221C16F6200ED8C91 /* InternetApp.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		993737E421C16F6200ED8C91 /* InternetApp */ = {
 			isa = PBXGroup;
 			children = (
-				993737E521C16F6200ED8C91 /* AppDelegate.swift */,
-				993737E721C16F6200ED8C91 /* ViewController.swift */,
-				993737E921C16F6200ED8C91 /* Main.storyboard */,
-				993737EC21C16F6B00ED8C91 /* Assets.xcassets */,
-				993737EE21C16F6B00ED8C91 /* LaunchScreen.storyboard */,
-				993737F121C16F6C00ED8C91 /* Info.plist */,
+				993737F821C1701700ED8C91 /* Controller */,
+				993737F721C16FA000ED8C91 /* Resources */,
+				993737E321C16F6200ED8C91 /* Products */,
 			);
 			path = InternetApp;
+			sourceTree = "<group>";
+		};
+		993737F721C16FA000ED8C91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				993737F121C16F6C00ED8C91 /* Info.plist */,
+				993737EC21C16F6B00ED8C91 /* Assets.xcassets */,
+				993737E521C16F6200ED8C91 /* AppDelegate.swift */,
+				993737FA21C1714E00ED8C91 /* Definitions.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		993737F821C1701700ED8C91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				993737E721C16F6200ED8C91 /* ViewController.swift */,
+				993737F921C1702700ED8C91 /* View */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		993737F921C1702700ED8C91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				993737E921C16F6200ED8C91 /* Main.storyboard */,
+				993737EE21C16F6B00ED8C91 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +155,8 @@
 			files = (
 				993737F021C16F6B00ED8C91 /* LaunchScreen.storyboard in Resources */,
 				993737ED21C16F6B00ED8C91 /* Assets.xcassets in Resources */,
+				993737FB21C1714F00ED8C91 /* Definitions.pdf in Resources */,
+				999D390021DD1438006E4619 /* Default-568h@2x.png in Resources */,
 				993737EB21C16F6200ED8C91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
