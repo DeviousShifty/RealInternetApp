@@ -140,14 +140,14 @@ public class InternetMasterViewController: UITableViewController
     
     
     
-    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) -> UITableViewCell
+    public override func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath) -> UITableViewCell
         
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         let rowText = InternetTopics[indexPath.row]
         cell.textLabel!.text = rowText
-        return cell;
+        return cell
         
         internetDetail?.detailAddress = addresses[indexPath.row];
         

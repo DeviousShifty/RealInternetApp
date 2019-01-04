@@ -20,7 +20,7 @@ public class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControl
         let splitViewController = window!.rootViewController as! UISplitViewController
         
         _ = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count, -1] as! UINavigationController
+        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         splitViewController.delegate = self
         return true
@@ -43,7 +43,7 @@ public class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControl
             else
         {
             return false}
-        guard let topAsDetailController = secondaryAsNavController as? UINavigationController
+        guard (secondaryAsNavController as? UINavigationController) != nil
             else
         {
                 return false}
